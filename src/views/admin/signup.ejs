@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup page</title>
+</head>
+
+<body>
+    <div class="card-body login-card-body">
+        <p class="login-box-msg">Sign up to register yourself</p>
+        <form name="loginForm" id="loginForm" action="/admin/login" method="post" novalidate="novalidate">
+            <input type="hidden" name="_csrf" value="uNwYpUcs-rYVx5Wyb-bpon5w-3qOYzqGGgKE">
+            <div class="input-group mb-3">
+                <input type="text" name="name" id="name" class="form-control valid" placeholder="Name">
+            </div>
+            <div class="input-group mb-3">
+                <input type="email" name="email" id="email" class="form-control valid" placeholder="Email">
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" name="password" id="password" class="form-control valid" placeholder="Password">
+            </div>
+            <div class="input-group mb-3">
+                <!-- <label for="myfile">Select a file:</label> -->
+                <input type="file" id="myfile" name="myfile">
+            </div>
+            <img src="/public/assets/img/upload.png" alt="Upload img" id="previewImg" width="100" height="100">
+            <div class="row">
+                <div class="col-8">
+                    <div class="icheck-primary">
+                        <a href="/admin/login">Or login here</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <button type="submit" id="adminLogin" class="btn btn-primary btn-block">Sign Up</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+$("#myfile").change(function(){
+    console.log("this.files[0]---", this.files[0] );
+    if(this.files[0]) { 
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#previewImg').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(this.files[0]);
+    }
+});
+</script>
+</html>

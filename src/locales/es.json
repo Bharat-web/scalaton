@@ -1,0 +1,14 @@
+{
+    "SUPPORTED_FILE_TYPES": "Seleccione solo tipos de archivo JPG/PNG/JPEG",
+    "SUPPORTED_FILE_SIZE": "El tamaño del archivo debe ser menor o igual a 2 mb",
+    "SUPPORTED_FILE_LENGTH": "El tamaño del archivo debe estar en el tamaño adecuado",
+    "FAIL_FILE_UPLOAD": "No se pudo cargar el archivo",
+    "USER_SIGNUP": "Registro de usuario con éxito",
+    "SUCCESS": "Success",
+    "USER_NOT_FAUND": "You are entered wrong credentials",
+    "NOT_FOUND": "User not found",
+    "EXPIRE": "Token expire",
+    "REQ_NAME": "El nombre debe tener un mínimo de 2 y un máximo de 50 caracteres.",
+    "USER_UPDATE": "perfil actualizado con éxito",
+    "PASSWORD_PATTERN": "Requerimos que su contraseña contenga un mínimo de 8 caracteres que contengan al menos un carácter y un número"
+}

@@ -1,0 +1,14 @@
+{
+    "SUPPORTED_FILE_TYPES": "Please select only JPG/PNG/JPEG file types",
+    "SUPPORTED_FILE_SIZE": "File size shuld be less or equal to 2 mb",
+    "SUPPORTED_FILE_LENGTH": "File size should be in proper size",
+    "FAIL_FILE_UPLOAD": "Failed to upload file",
+    "USER_SIGNUP": "User signup successfully",
+    "SUCCESS": "Success",
+    "USER_NOT_FAUND": "You are entered wrong credentials",
+    "NOT_FOUND": "User not found",
+    "EXPIRE": "Token expire",
+    "REQ_NAME": "Name should be min 2 and max 50 character is reqired",
+    "USER_UPDATE": "Profile updated successfully",
+    "PASSWORD_PATTERN": "We require your password to contain a minimum of 8 characters containing at least one lowercase, uppercase, special character and one number."
+}

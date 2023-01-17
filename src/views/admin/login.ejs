@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login page</title>
+</head>
+
+<body>
+    <div class="card-body login-card-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form name="loginForm" id="loginForm" action="/manager/login" method="post" novalidate="novalidate">
+            <input type="hidden" name="_csrf" value="uNwYpUcs-rYVx5Wyb-bpon5w-3qOYzqGGgKE">
+            <div class="input-group mb-3">
+                <input type="email" name="email" id="email" class="form-control valid" placeholder="Email"
+                    aria-invalid="false">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" name="password" id="password" class="form-control valid" placeholder="Password"
+                    aria-invalid="false">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="icheck-primary">
+                        <a href="/admin/signup">Or signup here</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <button type="submit" id="adminLogin" class="btn btn-primary btn-block">Sign In</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
